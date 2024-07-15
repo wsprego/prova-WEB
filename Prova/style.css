@@ -1,0 +1,178 @@
+/* Reset de estilos básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que as dimensões dos elementos incluam padding e border */
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo do documento */
+    line-height: 1.6; /* Define a altura da linha */
+    background-color: #f0f0f0; /* Cor de fundo do corpo do documento */
+}
+
+
+.container {
+    width: 80%; /* Largura do container */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Espaçamento interno do container */
+}
+
+
+/* Estilos do navbar */
+.navbar {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    color: #fff; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+}
+
+
+.navbar .container {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+
+.navbar .logo {
+    font-size: 1.8rem; /* Tamanho da fonte da logo */
+}
+
+
+.navbar .nav-links {
+    list-style-type: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para os links */
+}
+
+
+.navbar .nav-links li {
+    margin-right: 20px; /* Espaçamento entre os itens da lista */
+}
+
+
+.navbar .nav-links li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease; /* Efeito de transição suave na cor */
+}
+
+
+.navbar .nav-links li a:hover {
+    color: #66c2ff; /* Cor do texto ao passar o mouse sobre os links */
+}
+
+
+/* Estilos do hero section */
+.hero {
+    background-color: #fff; /* Cor de fundo da seção hero */
+    padding: 40px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    text-align: center; /* Alinhamento do texto ao centro */
+}
+
+
+.hero h2 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+
+.hero p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+    color: #666; /* Cor do texto */
+}
+
+
+/* Estilos do content section */
+.content {
+    background-color: #fff; /* Cor de fundo da seção de conteúdo */
+    padding: 40px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    text-align: center; /* Alinhamento do texto ao centro */
+}
+
+
+.content h3 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+
+.content p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+    color: #666; /* Cor do texto */
+}
+
+
+/* Estilos do footer */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto ao centro */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    bottom: 0; /* Alinha no rodapé */
+    width: 100%; /* Largura total */
+}
+
+.footerPag1{
+    position: absolute; /* Posição absoluta */
+}
+
+
+footer p {
+    font-size: 1rem; /* Tamanho da fonte do texto */
+}
+
+.video-container {
+    text-align: center; /* Alinha o conteúdo ao centro horizontalmente */
+    margin: 20px 0; /* Adiciona margem superior e inferior de 20px */
+}
+
+.image-container {
+    text-align: center; /* Alinha o conteúdo ao centro horizontalmente */
+    margin: 20px 0; /* Adiciona margem superior e inferior de 20px */
+}
+
+.image-container img {
+    max-width: 100%; /* A imagem não excederá 100% da largura do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem ao redimensionar */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave para efeitos de transformação e sombra */
+}
+
+/* Efeito de hover para a imagem */
+.image-container img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+}
+
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura do container em dispositivos menores */
+    }
+
+
+    .navbar .nav-links {
+        flex-direction: column; /* Altera a direção da flexbox para coluna */
+        margin-top: 10px; /* Espaçamento superior */
+    }
+
+
+    .navbar .nav-links li {
+        margin-right: 0; /* Remove o espaçamento entre os itens da lista */
+        margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
+    }
+
+
+    .navbar .logo {
+        text-align: center; /* Alinhamento do texto ao centro */
+    }
+}
+
+
